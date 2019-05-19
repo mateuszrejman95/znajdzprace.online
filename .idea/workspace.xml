@@ -1,42 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f142df8a-511c-4f5d-bbc2-eede063aeab8" name="Default Changelist" comment="clear">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/zp.pl.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/bundles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/packages/cache.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/packages/dev/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/packages/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/packages/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/packages/test/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/routes/dev/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/config/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/src/Controller/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zp.pl/templates/base.html.twig" afterDir="false" />
+    <list default="true" id="f142df8a-511c-4f5d-bbc2-eede063aeab8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/zp.pl/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -91,7 +57,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="261" />
+    <option name="x" value="-41" />
+    <option name="y" value="43" />
     <option name="width" value="1401" />
     <option name="height" value="1002" />
   </component>
@@ -113,6 +80,12 @@
               <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
               <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
               <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
@@ -151,7 +124,7 @@
     <property name="last_opened_file_path" value="C:/laragon/bin/php/php-7.2.18-Win32-VC15-x86/ext/php_xdebug-2.7.2-7.2-vc15.dll" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -183,20 +156,29 @@
       <workItem from="1558279320733" duration="322000" />
       <workItem from="1558279662002" duration="104000" />
       <workItem from="1558279808114" duration="57000" />
-      <workItem from="1558279879587" duration="1637000" />
+      <workItem from="1558279879587" duration="2635000" />
     </task>
+    <task id="LOCAL-00001" summary="clear">
+      <created>1558281788330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558281788330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6601000" />
+    <option name="totallyTimeSpent" value="7599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28582996" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28582996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49959514" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -206,9 +188,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30550623" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49878544" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49959514" visible="true" weight="0.30550623" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" visible="true" weight="0.30550623" />
       <window_info anchor="bottom" id="SVN Repositories" order="12" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -239,7 +221,7 @@
     <entry file="file://$PROJECT_DIR$/zp.pl/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
