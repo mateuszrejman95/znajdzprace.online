@@ -1,0 +1,16 @@
+{
+    "require": {
+        "doctrine/orm": "^2.6",
+        "symfony/maker-bundle": "^1.11"
+    },
+    "require-dev": {
+        "symfony/skeleton": "4.x",
+        "symfony/flex": "*"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    }
+}
