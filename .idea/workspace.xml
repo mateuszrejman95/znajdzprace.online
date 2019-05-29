@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f142df8a-511c-4f5d-bbc2-eede063aeab8" name="Default Changelist" comment="">
+    <list default="true" id="f142df8a-511c-4f5d-bbc2-eede063aeab8" name="Default Changelist" comment="clear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zp.pl/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="1037">
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -124,6 +128,9 @@
       </map>
     </option>
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -259,7 +266,7 @@
       <workItem from="1558279879587" duration="6319000" />
       <workItem from="1559073616194" duration="2844000" />
       <workItem from="1559158829092" duration="1369000" />
-      <workItem from="1559160210534" duration="4611000" />
+      <workItem from="1559160210534" duration="6232000" />
     </task>
     <task id="LOCAL-00001" summary="clear">
       <created>1558281788330</created>
@@ -282,11 +289,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559164765214</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="clear">
+      <created>1559166453751</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559166453751</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20107000" />
+    <option name="totallyTimeSpent" value="21728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -380,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zp.pl/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="1037">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
         </state>
       </provider>
     </entry>
