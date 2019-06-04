@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f142df8a-511c-4f5d-bbc2-eede063aeab8" name="Default Changelist" comment="clear">
+    <list default="true" id="f142df8a-511c-4f5d-bbc2-eede063aeab8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/zp.pl/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/public/js/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Controller/DefaultController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Controller/OfertyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Entity/Kategoria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Entity/Miasto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Entity/Oferta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Entity/Panstwo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Entity/Uzytkownik.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Entity/Wojewodztwo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Migrations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Migrations/Version20190602152636.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Migrations/Version20190602170332.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Repository/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Repository/KategoriaRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Repository/MiastoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Repository/OfertaRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Repository/PanstwoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Repository/UzytkownikRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/src/Repository/WojewodztwoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/templates/default/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/templates/oferty/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/templates/oferty/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zp.pl/templates/oferty/oferta.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/.env" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zp.pl/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/zp.pl/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,25 +71,59 @@
         <item name="zp.pl" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zp.pl" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="znajdzprace: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zp.pl" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="znajdzprace: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="oferta_miasto: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+        <entry file="file://$PROJECT_DIR$/zp.pl/src/Controller/OfertyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="1360">
+              <caret line="86" column="48" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+              <folding>
+                <element signature="e#34#59#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zp.pl/composer.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zp.pl/public/js/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+            <state relative-caret-position="17">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zp.pl/templates/oferty/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="107" selection-start-line="37" selection-start-column="107" selection-end-line="37" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zp.pl/templates/oferty/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -63,46 +131,66 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zp.pl/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zp.pl/public/index.php">
+        <entry file="file://$PROJECT_DIR$/zp.pl/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="89" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
+            <state relative-caret-position="68">
+              <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/zp.pl/src/Entity/Miasto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="1207">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a205ced4-a57a-45b5-8e07-0079d3e2642b/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/zp.pl/src/Entity/Oferta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2414">
+              <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/collation/utf8_polish_ci">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/zp.pl/src/Entity/Kategoria.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zp.pl/config/routes.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zp.pl/templates/oferty/oferta.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -132,10 +220,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/zp.pl/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/zp.pl/public/index.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a205ced4-a57a-45b5-8e07-0079d3e2642b/console.sql" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a205ced4-a57a-45b5-8e07-0079d3e2642b/console_1.sql" />
+        <option value="$PROJECT_DIR$/zp.pl/.env" />
+        <option value="a205ced4-a57a-45b5-8e07-0079d3e2642b/collation/utf8_polish_ci" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a205ced4-a57a-45b5-8e07-0079d3e2642b/console.sql" />
+        <option value="$PROJECT_DIR$/zp.pl/config/routes.yaml" />
+        <option value="$PROJECT_DIR$/zp.pl/templates/default/index.html.twig" />
+        <option value="$PROJECT_DIR$/zp.pl/src/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/zp.pl/public/css/style.css" />
+        <option value="$PROJECT_DIR$/zp.pl/templates/oferty/base.html.twig" />
+        <option value="$PROJECT_DIR$/zp.pl/src/Controller/OfertyController.php" />
+        <option value="$PROJECT_DIR$/zp.pl/templates/oferty/index.html.twig" />
+        <option value="$PROJECT_DIR$/zp.pl/public/js/js.js" />
+        <option value="$PROJECT_DIR$/zp.pl/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/zp.pl/templates/oferty/oferta.html.twig" />
       </list>
     </option>
   </component>
@@ -208,6 +309,65 @@
               <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
               <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zp.pl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="zp.pl" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="oferty" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -221,13 +381,20 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/laragon/bin/php/php-7.2.18-Win32-VC15-x86/ext/php_xdebug-2.7.2-7.2-vc15.dll" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zp.pl/templates/oferty" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Aplikacje webowe\zp.pl\zp.pl\templates\oferty" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,7 +431,10 @@
       <workItem from="1559158829092" duration="1369000" />
       <workItem from="1559160210534" duration="6232000" />
       <workItem from="1559167933006" duration="58000" />
-      <workItem from="1559337268195" duration="2998000" />
+      <workItem from="1559337268195" duration="3187000" />
+      <workItem from="1559481980014" duration="28269000" />
+      <workItem from="1559596528438" duration="4428000" />
+      <workItem from="1559681420299" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="clear">
       <created>1558281788330</created>
@@ -301,19 +471,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559167953653</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="clear">
+      <created>1559344250651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559344250651</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24784000" />
+    <option name="totallyTimeSpent" value="59083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5323246" visible="true" weight="0.30170575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5323246" visible="true" weight="0.116204694" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -324,16 +499,19 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49878544" weight="0.32827735" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49959514" weight="0.21235102" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50121456" side_tool="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" visible="true" weight="0.2524377" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.37594798" />
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="12" weight="0.32827735" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49878544" weight="0.32827735" />
       <window_info anchor="bottom" id="File Transfer" order="14" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="15" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.49946696" weight="0.37594798" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.5158184" visible="true" weight="0.32995737" />
-      <window_info anchor="right" auto_hide="true" id="Structure" order="4" sideWeight="0.48418158" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.5043478" visible="true" weight="0.20042644" />
+      <window_info anchor="right" auto_hide="true" id="Structure" order="4" sideWeight="0.49565217" side_tool="true" weight="0.20042644" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" sideWeight="0.4943274" side_tool="true" weight="0.12153518" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,13 +540,6 @@
         <state relative-caret-position="-3315" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zp.pl/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zp.pl/bin/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -379,12 +550,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zp.pl/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/zp.pl/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="277">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a205ced4-a57a-45b5-8e07-0079d3e2642b/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/collation/utf8_polish_ci">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/zp.pl/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -393,26 +588,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/wojewodztwo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Migrations/Version20190602152636.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+        <state relative-caret-position="286">
+          <caret line="26" column="221" selection-start-line="26" selection-start-column="221" selection-end-line="26" selection-end-column="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Migrations/Version20190602170332.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/panstwo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/uzytkownik">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/kategoria">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/oferta_kategoria">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/oferta">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="uzytkownik_id=1" />
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a205ced4-a57a-45b5-8e07-0079d3e2642b/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
-    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/collation/utf8_polish_ci">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/oferta_miasto">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Repository/OfertaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/ControllerTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
+          <caret line="223" column="23" selection-start-line="223" selection-start-column="23" selection-end-line="223" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/templates/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a205ced4-a57a-45b5-8e07-0079d3e2642b/schema/znajdzprace/table/miasto">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c38a5f67-24e3-415b-a1d5-624afcc0c2ca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zp.pl/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zp.pl/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Controller/OfertyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="86" column="48" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+          <folding>
+            <element signature="e#34#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/public/js/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/templates/oferty/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="107" selection-start-line="37" selection-start-column="107" selection-end-line="37" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/templates/oferty/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Entity/Miasto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Entity/Oferta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/src/Entity/Kategoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zp.pl/templates/oferty/oferta.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
         </state>
       </provider>
     </entry>

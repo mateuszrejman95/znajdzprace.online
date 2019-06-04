@@ -1,0 +1,53 @@
+{% extends 'oferty/base.html.twig' %}
+
+{% block title %}Hello OfertyController!{% endblock %}
+
+{% block body %}
+<style>
+
+</style>
+
+<div class="example-wrapper">
+    <h1>Oferty w znajdzprace.pl</h1>
+    {% if oferty|length %}
+        Znaleziono {{ oferty|length }} ofert.
+        {{ komunikat }}
+        <br><br>
+        {% for oferta in oferty %}
+            <div class="oferta row">
+                <h2><a href="{{ path('app_oferta', {id_oferta: oferta.id}) }}">{{ oferta.tytul }} &raquo;</a></h2>
+                <div class="small offer_date">
+                    Data dodania: <span class="data">{{ oferta.datadodania|date("Y-m-d H:i:s") }}</span> &nbsp;
+                    Autor: <span class="autor">{{ oferta.uzytkownik.imie }} {{ oferta.uzytkownik.nazwisko }}</span>
+                </div>
+                <div class="half miasto">
+                    {% if oferta.lokalizacja|length %}
+                        Miasta:<br>
+                        <ul>
+                            {%  for miasto in oferta.lokalizacja %}
+                                <li><a href="{{ path('app_oferta_by_city', {id_city: miasto.id}) }}">{{ miasto.nazwa }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <div class="half kategoria">
+                    {% if oferta.kategoria|length %}
+                        Kategorie:<br>
+                        <ul>
+                            {%  for kategoria in oferta.kategoria %}
+                                <li><a href="{{ path('app_oferta_by_category', {id_category: kategoria.id}) }}">{{ kategoria.nazwa }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+        {% else %}
+        Brak ofert
+    {% endif %}
+
+
+
+</div>
+{% endblock %}
