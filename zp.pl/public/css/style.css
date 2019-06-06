@@ -6,3 +6,6 @@
 .small { font-size: 70%; opacity: 0.75; }
 .offer_date { padding: 1em 0; }
 .oferta_tresc { font-size: 120%; font-style:italic; border: #2e3136 solid 1px; padding: 0.75em; margin: 1em 0;  }
+.logo-link  { display:block; width: 100%; clear: both;
+    overflow: hidden;}
+.logo-link img { width:100%; height: auto; }
