@@ -6,11 +6,12 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UzytkownikRepository")
  */
-class User implements UserInterface
+class Uzytkownik implements UserInterface
 {
     /**
      * @ORM\Id()
@@ -21,16 +22,19 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("main")
      */
     private $imie;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups("main")
      */
     private $nazwisko;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("main")
      */
     private $email;
 
@@ -48,6 +52,28 @@ class User implements UserInterface
      * @ORM\Column(type="text")
      */
     private $roles = [];
+
+    /**
+     * @ORM\OneToMAny(targetEntity="App\Entity\ApiToken", mappedBy="uzytkownik", orphanRemoval=true)
+     * @var array
+     */
+    private $apiTokens = [];
+
+    /**
+     * @return array
+     */
+    public function getApiTokens(): array
+    {
+        return $this->apiTokens;
+    }
+
+    /**
+     * @param array $apiTokens
+     */
+    public function setApiTokens(array $apiTokens): void
+    {
+        $this->apiTokens = $apiTokens;
+    }
 
     public function __construct()
     {
@@ -137,25 +163,13 @@ class User implements UserInterface
 
         return $this;
     }
-    /**
-     * Returns the roles granted to the user.
-     *
-     *     public function getRoles()
-     *     {
-     *         return ['ROLE_USER'];
-     *     }
-     *
-     * Alternatively, the roles might be stored on a ``roles`` property,
-     * and populated in any number of different ways when the user object
-     * is created.
-     *
-     * @return (Role|string)[] The user roles
-     */
+
+
     public function getRoles()
     {
-       $role  = $this->roles;
-       $role[] = 'ROLE_UESR';
-       return array_unique($role);
+       $roles = (array)$this->roles;
+       $roles[] = 'ROLE_USER';
+       return array_unique($roles);
     }
 
     /**

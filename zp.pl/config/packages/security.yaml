@@ -1,0 +1,41 @@
+security:
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+       # in_memory: { memory: ~ }
+        app_user_provider:
+            entity:
+                class: App\Entity\Uzytkownik
+                property: email
+    encoders:
+        App\Entity\Uzytkownik:
+            algorithm: argon2i #bcrypt
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: true
+            guard:
+                authenticators:
+                    - App\Security\LoginFormAuthenticator
+                    - App\Security\ApiTokenAuthenticator
+                entry_point: App\Security\LoginFormAuthenticator
+            logout:
+                path: app_logout
+            # activate different ways to authenticate
+            # https://symfony.com/doc/current/security.html#firewalls-authentication
+
+            # https://symfony.com/doc/current/security/impersonating_user.html
+            switch_user: true
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+       # - { path: ^/login$, roles: IS_AUTHENTICATED_ANNONYMOUSLY }
+        # - { path: ^/admin, roles: ROLE_ADMIN }
+        # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/account, roles: IS_AUTHENTICATED_FULLY }
+
+    role_hierarchy:
+        ROLE_ADMIN: [ROLE_ADMIN_OFERTY, ROLE_ADMIN_UZYTKOWNICY, ROLE_ALLOWED_TO_SWITCH]
+        ROLE_SUPERADMIN: [ROLE_ADMIN]

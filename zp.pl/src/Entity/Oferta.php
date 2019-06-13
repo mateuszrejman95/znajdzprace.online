@@ -24,7 +24,7 @@ class Oferta
     private $tytul;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="oferty")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Uzytkownik", inversedBy="oferty")
      * @ORM\JoinColumn(nullable=false)
      */
     private $uzytkownik;
@@ -77,12 +77,12 @@ class Oferta
         return $this;
     }
 
-    public function getUzytkownik(): ?User
+    public function getUzytkownik(): ?Uzytkownik
     {
         return $this->uzytkownik;
     }
 
-    public function setUzytkownik(?User $uzytkownik): self
+    public function setUzytkownik(?Uzytkownik $uzytkownik): self
     {
         $this->uzytkownik = $uzytkownik;
 

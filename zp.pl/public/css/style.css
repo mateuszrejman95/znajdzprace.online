@@ -1,4 +1,4 @@
-.example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+.example-wrapper { margin: auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; background: #dee4ef; padding-left: 25px;}
 .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 .half { width: 50%; box-sizing: border-box; float: left; overflow: hidden; }
 .row { overflow: hidden; clear: both; display: block; width: 100%; }
@@ -9,3 +9,7 @@
 .logo-link  { display:block; width: 100%; clear: both;
     overflow: hidden;}
 .logo-link img { width:100%; height: auto; }
+.userbar {background: burlywood; text-align: right; font-weight: 700; width: 100%; height: 35px; padding: 5px 10px 0 0;}
+nav#navbar_top {  padding: 0; margin: 0 !important; }
+body { background: #b7cbf7; }
+.logtab { width: 300px; margin-left: auto; margin-right: auto; }

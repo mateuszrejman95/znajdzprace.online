@@ -10,6 +10,14 @@ use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+
+
+/**
+ * Class OfertyController
+ * @package App\Controller
+ * @ IsGranted("ROLE_ADMIN")
+ */
 class OfertyController extends AbstractController
 {
     /**
@@ -87,4 +95,21 @@ class OfertyController extends AbstractController
             'komunikat' => 'Oferty dla kategorii '.$category->getNazwa(),
         ]);
     }
+
+    /**
+     * @Route("/admin/oferty", name="app_admin_oferty")
+     *
+     */
+    public function adminOferty()
+    {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+        $oferty = $this->ofertaManager->findAll();
+        //dd($oferty);
+        return $this->render('oferty/index.html.twig', [
+            'controller_name' => 'OfertyController',
+            'oferty' => $oferty,
+            'komunikat' => 'Zarządzaj ofertami'
+        ]);
+    }
+
 }

@@ -12,31 +12,16 @@
         {% endblock %}
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-bg mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-bg mb-5" id="navbar_top">
         <a  class="logo-link" href="{{ path('index') }}">
             <img src="{{ asset('img/logo.png') }}" alt="znajdzprace.online">
         </a>
 
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a style="color: #fff;" class="nav-link" href="{{ path('app_login') }}">Login</a>
-                </li>
-                {#
-                <li class="nav-item dropdown" style="margin-right: 75px;">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img class="nav-profile-img rounded-circle" src="{{ asset('images/astronaut-profile.png') }}">
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="#">Create Post</a>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </div>
-                </li>
-                #}
-            </ul>
+
         </div>
     </nav>
-
+        {% embed "topbar.html.twig" with {"user": app.user } %}
+        {% endembed %}
     {% block body %}strona szukajpracy.pl{% endblock %}
         {% block javascripts %}
             <script src="{{ asset('js/js.js') }}"></script>
@@ -50,7 +35,7 @@
         {% endblock %}
     <footer class="footer">
         <div class="container text-center">
-            <span class="text-muted">Made with <i class="fa fa-heart" style="color: red;"></i> by the guys and gals at <a href="https://knpuniversity.com">KnpUniversity</a></span>
+
         </div>
     </footer>
     </body>
