@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Oferta;
 use App\Entity\Uzytkownik;
 use App\Repository\UzytkownikRepository;
+use App\Security\LoginFormAuthenticator;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -11,6 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Core\User\User;
+use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityController extends AbstractController
@@ -37,13 +40,42 @@ class SecurityController extends AbstractController
         return $this->render('base.html.twig');
 
     }
+
     /**
-     * @Route("/register", name="app_zarejestruj")
+     * @Route("/register", name="app_register")
+     * @param Request $request
+     * @param UserPasswordEncoderInterface $passwordEncoder
+     * @param GuardAuthenticatorHandler $guardHandler
+     * @param LoginFormAuthenticator $formAuthenticator
+     * @return Response
      */
-    public function zarejestruj():Response
+    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, LoginFormAuthenticator $formAuthenticator)//:Response
     {
-        return $this->render('base.html.twig');
+        /*$error = '';
+        return $this->render('security/register.html.twig', ['error' => $error]);*/
+        if ($request->isMethod('POST')) {
+            $user = new Uzytkownik();
+            $user -> setImie('Stefan');
+            $user->setEmail($request->request->get('email'));
+           $user->setPassword($passwordEncoder->encodePassword(
+                $user,
+                $request->request->get('password')
+            ));
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($user);
+            //dd($user);
+
+            $em->flush();
+            return $guardHandler->authenticateUserAndHandleSuccess(
+                $user,
+                $request,
+                $formAuthenticator,
+                'main'
+            );
+        }
+        return $this->render('security/register.html.twig');
     }
+
 
     /**
      * @Route("/userpassword", name="app_userpassword")

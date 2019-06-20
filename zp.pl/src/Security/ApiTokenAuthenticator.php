@@ -37,7 +37,13 @@ class ApiTokenAuthenticator extends AbstractGuardAuthenticator
     }
 
     public function getUser($credentials, UserProviderInterface $userProvider)
-    {
+    {   /*$token = $this->apiTokenRepo->findOneBy([
+        'token' => $credentials
+    ]);
+        if (!$token) {
+            return;
+        }
+        return $token->getUser();*/
         $token = $this->apiTokenRepo->findOneBy([
             'token' => $credentials
         ]);
@@ -57,7 +63,7 @@ class ApiTokenAuthenticator extends AbstractGuardAuthenticator
 
     public function checkCredentials($credentials, UserInterface $user)
     {
-        // todo
+       return true;
     }
 
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception)

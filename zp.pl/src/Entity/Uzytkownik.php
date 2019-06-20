@@ -44,14 +44,14 @@ class Uzytkownik implements UserInterface
     private $haslo;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Oferta", mappedBy="uzytkownik", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Entity\Oferta", mappedBy="uzytkownik", orphanRemoval=true, cascade="persist")
      */
     private $oferty;
 
     /**
      * @ORM\Column(type="text")
      */
-    private $roles = [];
+    private $roles = '';
 
     /**
      * @ORM\OneToMAny(targetEntity="App\Entity\ApiToken", mappedBy="uzytkownik", orphanRemoval=true)

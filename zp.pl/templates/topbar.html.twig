@@ -7,10 +7,11 @@
 <div class="userbar" id="topuserbar">
     {% if is_granted('ROLE_USER')  %}
             {% trans %}Logged in{% endtrans %}: {{ user.imie }} {{ user.nazwisko }} <a href="{{ path('app_account') }}">{% trans %}Profile{% endtrans %} </a>
-            <a href="{{ path('app_logout') }}">{% trans %}Logout{% endtrans %}</a>
+            <a href="{{ path('app_logout') }}">{% trans %}Logout{% endtrans %} </a><a href="{{ path('add_oferta') }}">{% trans %}Add ofert{% endtrans %} </a>
     {% else %}
-        <a href="{{ path('app_login') }}">{% trans %}Login{% endtrans %} </a> <a href="{{ path('app_zarejestruj') }}">{% trans %}Register{% endtrans %}</a>
+        <a href="{{ path('app_login') }}">{% trans %}Login{% endtrans %} </a> <a href="{{ path('app_register') }}">{% trans %}Register{% endtrans %}</a>
     {% endif %}
+
 </div>
 
 {% endblock %}

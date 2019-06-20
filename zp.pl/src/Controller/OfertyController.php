@@ -5,9 +5,13 @@ namespace App\Controller;
 use App\Entity\Kategoria;
 use App\Entity\Miasto;
 use App\Entity\Oferta;
+use App\Entity\Wojewodztwo;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Annotation\Route;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
@@ -25,6 +29,7 @@ class OfertyController extends AbstractController
      */
     private $ofertaManager;
     private $manager;
+    private $session;
 
     /**
      * OfertyController constructor.
@@ -33,6 +38,7 @@ class OfertyController extends AbstractController
     {
         $this->ofertaManager = $manager->getRepository(Oferta::class);
         $this->manager = $manager;
+
     }
 
 
@@ -111,5 +117,51 @@ class OfertyController extends AbstractController
             'komunikat' => 'Zarządzaj ofertami'
         ]);
     }
+
+    /**
+     * @Route("/oferty/addOferta", name="add_oferta")
+     */
+
+    public function addOferta(Request $request)
+        {
+            if ($request->isMethod('POST')) {
+                $oferta = new Oferta();
+                $oferta -> setAktywna(true);
+                $oferta -> setDataDodania(new \DateTime('now'));
+                $oferta -> setTresc($request->request->get('tresc'));
+                //$oferta -> setTytul('tytul');
+                $oferta -> setTytul($request -> request ->get('tytul'));
+                $oferta -> setUzytkownik($this -> getUser());
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($oferta);
+                $em -> flush();
+                return $this -> render('oferty/addSucces.html.twig');
+            }
+            $repo = $this->getDoctrine()->getRepository(Wojewodztwo::class);
+            $wojewodztwa = $repo->findAll();
+            $repom = $this->getDoctrine()->getRepository(Miasto::class);
+            $miasta = $repom->findByWojewodztwo($wojewodztwa [0]);
+            return $this->render('oferty/addOferta.html.twig', [ 'wojewodztwa'=>$wojewodztwa, 'miasta'=>$miasta ]);
+
+        }
+
+    /**
+     * @Route("/oferty/getmiasta/{woj}", name="get_miasta")
+     */
+        public function getMiasta(Request $request, Wojewodztwo $woj){
+            $repo = $this->getDoctrine()->getRepository(Miasto::class);
+            $miasta = $repo->findByWojewodztwo($woj);
+           $result = '';
+           if(count($miasta)){
+               foreach ($miasta as $miasto){
+                   $id_miasta = $miasto -> getId();
+                   $nazwa = $miasto -> getNazwa();
+                   $result .= "<option value='$id_miasta'>$nazwa</option>
+            ";
+
+               }
+           }
+           return new Response($result);
+        }
 
 }
