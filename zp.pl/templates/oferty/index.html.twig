@@ -13,6 +13,7 @@
         Znaleziono {{ oferty|length }} ofert.
         {{ komunikat }}
         <br><br>
+
         {% for oferta in oferty %}
             <div class="oferta row">
                 <h2 style="background: darkorange;"><a href="{{ path('app_oferta', {id_oferta: oferta.id}) }}">{{ oferta.tytul }} &raquo;</a></h2>
