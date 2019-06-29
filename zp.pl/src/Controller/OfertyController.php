@@ -9,6 +9,7 @@ use App\Entity\Wojewodztwo;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -47,7 +48,7 @@ class OfertyController extends AbstractController
      */
     public function showAll()
     {
-        $oferty = $this->ofertaManager->findAll();
+        $oferty = $this->ofertaManager->findByAktywna(1);
         //dd($oferty);
         return $this->render('oferty/index.html.twig', [
             'controller_name' => 'OfertyController',
@@ -124,24 +125,55 @@ class OfertyController extends AbstractController
 
     public function addOferta(Request $request)
         {
+            $errors = [];
             if ($request->isMethod('POST')) {
-                $oferta = new Oferta();
-                $oferta -> setAktywna(true);
-                $oferta -> setDataDodania(new \DateTime('now'));
-                $oferta -> setTresc($request->request->get('tresc'));
-                //$oferta -> setTytul('tytul');
-                $oferta -> setTytul($request -> request ->get('tytul'));
-                $oferta -> setUzytkownik($this -> getUser());
-                $em = $this->getDoctrine()->getManager();
-                $em->persist($oferta);
-                $em -> flush();
-                return $this -> render('oferty/addSucces.html.twig');
+                $tytul = $request -> request ->get('tytul');
+                if(!empty($tytul)){
+                    $oferta = new Oferta();
+                    $oferta -> setAktywna(true);
+                    $oferta -> setDataDodania(new \DateTime('now'));
+                    $oferta -> setTresc($request->request->get('tresc'));
+                    //dd($request -> request -> get('kategoria'));
+
+                    $kategorie = $request -> request -> get('kategoria');
+                    if (!empty($kategorie)){
+                        $repok = $this->getDoctrine()->getRepository(Kategoria::class);
+
+                        foreach ($kategorie as $kat){
+                            $kattmp = $repok->findOneBy(['id' => $kat]);
+                            $oferta -> addKategorium($kattmp);
+                        }
+                    }
+
+                    $miasta = $request -> request -> get('miasto');
+                    if(!empty($miasta)){
+                        $repom = $this->getDoctrine()->getRepository(Miasto::class);
+                        //dd($miasta);
+                        foreach ($miasta as $mia){
+                            $miastmp =  $repom -> findOneBy(['id' => $mia]);
+                            $oferta -> addLokalizacja($miastmp);
+                        }
+                    }
+
+                    //$oferta -> setTytul('tytul');
+                    $oferta -> setTytul($tytul);
+                    $oferta -> setUzytkownik($this -> getUser());
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($oferta);
+                    $em -> flush();
+                    return $this -> render('oferty/addSucces.html.twig');
+                }
+                $errors[] = 'Pole tytułu nie może być puste';
             }
             $repo = $this->getDoctrine()->getRepository(Wojewodztwo::class);
             $wojewodztwa = $repo->findAll();
             $repom = $this->getDoctrine()->getRepository(Miasto::class);
             $miasta = $repom->findByWojewodztwo($wojewodztwa [0]);
-            return $this->render('oferty/addOferta.html.twig', [ 'wojewodztwa'=>$wojewodztwa, 'miasta'=>$miasta ]);
+            $repok = $this->getDoctrine()->getRepository(Kategoria::class);
+            $kategoria = $repok->findAll();
+
+
+            return $this->render('oferty/addOferta.html.twig', [ 'wojewodztwa'=>$wojewodztwa, 'miasta'=>$miasta, 'kategorie'=> $kategoria, 'errors' => $errors ]);
 
         }
 
@@ -163,5 +195,19 @@ class OfertyController extends AbstractController
            }
            return new Response($result);
         }
+
+    /**
+     * @Route("/oferta/deactive/{oferta}", name="disable_offer")
+     * @param Oferta $oferta
+     * @return RedirectResponse
+     */
+        public function setNotActiveOffert(Oferta $oferta){
+            $oferta -> setAktywna(! $oferta->getAktywna());
+            $this -> manager -> persist($oferta);
+            $this -> manager -> flush();
+            return new RedirectResponse($this -> generateUrl('app_account'));
+
+        }
+
 
 }

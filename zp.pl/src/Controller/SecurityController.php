@@ -55,7 +55,8 @@ class SecurityController extends AbstractController
         return $this->render('security/register.html.twig', ['error' => $error]);*/
         if ($request->isMethod('POST')) {
             $user = new Uzytkownik();
-            $user -> setImie('Stefan');
+            $user -> setImie($request->request->get('imie'));
+            $user -> setNazwisko($request->request->get('nazwisko'));
             $user->setEmail($request->request->get('email'));
            $user->setPassword($passwordEncoder->encodePassword(
                 $user,

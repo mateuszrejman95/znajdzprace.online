@@ -16,7 +16,7 @@
 
         {% for oferta in oferty %}
             <div class="oferta row">
-                <h2 style="background: darkorange;"><a href="{{ path('app_oferta', {id_oferta: oferta.id}) }}">{{ oferta.tytul }} &raquo;</a></h2>
+                <h2 style="background: #d0ff8f;"><a href="{{ path('app_oferta', {id_oferta: oferta.id}) }}">{{ oferta.tytul }} &raquo;</a></h2>
                 <div class="small offer_date">
                     Data dodania: <span class="data">{{ oferta.datadodania|date("Y-m-d H:i:s") }}</span> &nbsp;
                     Autor: <span class="autor">{{ oferta.uzytkownik.imie }} {{ oferta.uzytkownik.nazwisko }}</span>
@@ -26,7 +26,7 @@
                         Miasta:<br>
                         <ul>
                             {%  for miasto in oferta.lokalizacja %}
-                                <li style="font-size: 70%"><a href="{{ path('app_oferta_by_city', {id_city: miasto.id}) }}">{{ miasto.nazwa }}</a></li>
+                                <li style="font-size: 70%"><a href="{{ path('app_oferta_by_city', {id_city: miasto.id}) }}">{{ miasto.nazwa }} ({{ miasto.wojewodztwo.nazwa }})</a></li>
                             {% endfor %}
                         </ul>
                     {% endif %}

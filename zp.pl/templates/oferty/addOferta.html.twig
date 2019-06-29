@@ -13,6 +13,11 @@
                 {# todo - replace with a Symfony form! #}
                 <form class="form-addOferta" method="post">
                     <h1 class="h3 mb-3 font-weight-normal">{% trans %}addOferta{% endtrans %}</h1>
+                    {% if errors|length>0 %}
+                        {% for error in errors %}
+                            <div class="error" >{{ error }}</div>
+                        {% endfor %}
+                    {% endif %}
                     <label for="inputTytul" class="sr-only">Tytuł oferty</label>
                     <input type="tytul" name="tytul" id="inputTytul" class="form-control" placeholder="Tytuł oferty"  >
                     <label for="inputTresc" class="sr-only">Tresc</label>
@@ -24,14 +29,20 @@
                         {% endfor %}
                     </select><br><br>
                     <span>Wybierz miasto</span>
-                    <select id="miastoselect" name="miasto">
+                    <select id="miastoselect" name="miasto[]" multiple>
                         {% if miasta|length>0 %}
                             {% for miasto in miasta %}
                                 <option value="{{ miasto.id }}">{{ miasto.nazwa }}</option>
                             {% endfor %}
                         {% endif %}
 
-                    </select>
+                    </select><br><br>
+                    <span>Wybierz kategorie</span>
+
+                        {% for kategoria in kategorie %}
+                            <label><input type="checkbox" value="{{kategoria.id}}" name="kategoria[]"> {{kategoria.nazwa}}</label>
+                        {% endfor %}
+
 
                     <button class="btn btn-lg btn-primary btn-block" type="submit">
                         Dodaj ofertę
